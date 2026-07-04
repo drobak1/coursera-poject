@@ -2,8 +2,18 @@
   box-sizing: border-box;
   margin: 0;
 }
+:root {
+  --primary-color-gr: #495e57;
+  --primary-color-ye: #f4ce14;
+  --primary-color-bg: #edefee;
+  --secondary-color-1: #ee9972;
+  --secondary-color-2: #fbdabb;
+  --secondary-color-text: #333333;
+
+  --heading-font: Markazi text;
+}
 body{
-  background-color: #edefee;
+  background-color: var(--primary-color-bg);
 }
 
 .main {
@@ -27,7 +37,23 @@ body{
   height: 110px;
 }
 
-nav ul {
+footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  width: 90%;
+  max-width: 2560px;
+}
+
+
+
+.footer-logo {
+  justify-self: center;
+  align-self: center;
+  width: 50px
+}
+
+.nav-links {
   display: flex;
   flex-direction: row;
   gap: 20px;
