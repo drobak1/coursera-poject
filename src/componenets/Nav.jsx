@@ -3,7 +3,7 @@ export default function Nav() {
   return(
     <>
       <nav>
-        <ul>
+        <ul className="nav-links">
           <li><a href="" role="button">Home</a></li>
           <li><a href="" role="button">About</a></li>
           <li><a href="" role="button">Menu</a></li>

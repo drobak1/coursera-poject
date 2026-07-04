@@ -1,19 +1,15 @@
 import React from "react";
 import Footer from "./componenets/Footer";
+import Header from "./componenets/Header";
+import Main from "./componenets/Main";
 
 
 export default function App() {
   return(
     <>
-      <header></header>
-        <main>
-            <section></section>   //hero
-            <section></section>   //meals
-            <section></section>   //testimonials
-            <section></section>   //about
-        </main>
+      <Header className="header" />
+      <Main className="main" />
       <Footer />
-      <div>ppppppppppppppppppppppppppppppppppp</div>
     </>
   );
 }
