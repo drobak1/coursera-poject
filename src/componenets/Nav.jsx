@@ -1,5 +1,5 @@
 export default function Nav() {
-  
+
   return(
     <>
       <nav>
@@ -12,8 +12,6 @@ export default function Nav() {
           <li><a href="" role="button">Login</a></li>
         </ul>
       </nav>
-
-
     </>
   )
 }
