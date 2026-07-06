@@ -4,6 +4,7 @@ export default function Footer() {
 
   return(
     <>
+    <div className="footer-wrapper">
       <footer>
         <img className="footer-logo" src="src\assets\Little-Lemon-logos\Asset 20@4x.png"></img>
         <Nav /> {/* nav */}
@@ -17,12 +18,13 @@ export default function Footer() {
         </address> {/* contacts */}
         <article className="soc-links">
           <ul>
-            <li><a href=""><img src="null"></img></a></li> {/* fb */}
-            <li><a href=""><img src="null"></img></a></li> {/* ig */}
-            <li><a href=""><img src="null"></img></a></li> {/* // */}
+            <li><a href="" className="footer-soc-icon"><img src="null"></img></a></li> {/* fb */}
+            <li><a href="" className="footer-soc-icon"><img src="null"></img></a></li> {/* ig */}
+            <li><a href="" className="footer-soc-icon"><img src="null"></img></a></li> {/* // */}
           </ul>
         </article> {/* socials */}
       </footer>
+    </div>
     </>
   )
 

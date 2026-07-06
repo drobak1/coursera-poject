@@ -8,8 +8,10 @@ export default function App() {
   return(
     <>
       <Header className="header" />
-      <Main className="main" />
-      <Footer />
+      <div className="content-wrapper">
+        <Main />
+        <Footer />
+      </div>
     </>
   );
 }
