@@ -7,11 +7,9 @@ import Main from "./componenets/Main";
 export default function App() {
   return(
     <>
-      <Header className="header" />
-      <div className="content-wrapper">
-        <Main />
-        <Footer />
-      </div>
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }

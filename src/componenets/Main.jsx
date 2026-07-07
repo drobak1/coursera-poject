@@ -1,14 +1,17 @@
+import Hero from "./Hero"
+
 export default function Main() {
     return (
       <>
-        <main>
-          <div className="page">
-            <section></section>   //hero
+        <div className="content-wrapper">
+          <main className="page">
+            <Hero />
             <section></section>   //meals
             <section></section>   //testimonials
             <section></section>   //about
-          </div>
-        </main>
+          </main>
+        </div>
+        
       </>
   )
 }
