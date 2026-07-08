@@ -1,14 +1,22 @@
 import React from "react";
-import Footer from "./componenets/Footer";
+import { Routes, Route, Link } from "react-router";
+import LandingPage from "./pages/LandingPage";
 import Header from "./componenets/Header";
-import Main from "./componenets/Main";
+import Footer from "./componenets/Footer";
 
 
 export default function App() {
   return(
     <>
       <Header />
-      <Main />
+      <main>
+        <Routes>
+          <Route path="/" element={ <LandingPage /> }/>
+
+
+
+        </Routes>
+      </main>
       <Footer />
     </>
   );

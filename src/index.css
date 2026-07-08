@@ -30,7 +30,7 @@ body{
   left: 0;
   right: 0;
 
-  height: 110px;
+  height: 100px;
   width: 100%;
 
   display: flex;
@@ -61,24 +61,18 @@ body{
 
 .page {
   max-width: 2560px;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.content-wrapper {
-  padding-top: 110px;
-
-}
-
-main {
   margin: auto;
+
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
+
   min-height: 100vh;
+}
+
+.content-wrapper {
+  padding-top: 100px;
 }
 
 .nav-links {
@@ -94,7 +88,7 @@ main {
 }
 
 .header-logo {
-  width: 250px;
+  width: 200px;
 }
 
 .hero-bar {
@@ -138,13 +132,13 @@ main {
   width: 200px;
 }
 
-.hero-button {
+.button {
   margin: 8px 0;
   width: 200px;
   height: 60px;
   text-align: center;
   background-color: var(--primary-color-ye);
-  border: 1px solid var(--secondary-color-text);
+  border: none;
   border-radius: 16px;
   font-size: 18px;
   font-weight: 700;
@@ -166,6 +160,71 @@ main {
   border-radius: 16px;
 }
 
+/* Specials */
+.specials {
+  margin: 10px 0;
+  width: 66%;
+}
+
+.specials-wrapper {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.specials-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specials-heading h1{
+  font-size: clamp(32px, 3vw, 56px);
+  color: var(--secondary-color-text);
+  margin: 0;
+}
+
+.special-card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(100px, 30%, 600px);;
+}
+
+.special-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.special-heading .special-price {
+  white-space: nowrap;
+}
+
+.special-img-container {
+height: 185px;
+
+}
+
+.special-img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.special-content {
+  background-color: #cfcfcf8b;
+  height: 253px;
+  padding: 1rem;
+  
+}
+
+
 footer {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
@@ -182,8 +241,12 @@ footer {
   width: 50px
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 li {
-  list-style-position: inside;
   list-style-type: none;
 }
 

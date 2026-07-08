@@ -8,7 +8,7 @@ export default function Hero() {
             <h1>Little Lemon</h1>
             <h2>Chicago</h2>
             <p>We are family owned Mediterranean restaurant focused on traditional recipes served with a modern twist!</p>
-            <button className="hero-button">Reserve a Table</button>
+            <button className="button">Reserve a Table</button>
           </div>
           <div className="hero-img-container">
             <img src="src\assets\images\restauranfood.jpg" alt="Server with bruschettas" id="hero-img"/>
