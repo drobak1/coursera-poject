@@ -31,7 +31,7 @@ export default function Specials() {
           <h1>This Week Specials!</h1>
           <button className="button">Order Online!</button>
         </div>
-        
+
         <div className="specials-wrapper">
           {
             specials.map( special => <Meal key={special.id}
