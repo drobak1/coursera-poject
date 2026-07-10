@@ -142,7 +142,16 @@ body{
   border-radius: 16px;
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
 }
+
+.button:hover {
+  background-color: hsl(50, 91%, 45%);
+}
+
+
 
 .hero-img-container {
   /* margin-right: 36px; */
@@ -233,13 +242,54 @@ height: 185px;
 }
 
 .ratings-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
+}
 
+.ratings-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: 200px;
 }
 
 .rating-card {
-  border: 1px solid var(--secondary-color-text);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "stars stars"
+                       "userPic userName"
+                       "ratingText ratingText";
+
+  margin: 10px;
+  padding: 20px 20px;
+  width: 30%;
+  background-color: var(--primary-color-bg);
+  /* height: px; */
+  /* border: 1px solid var(--secondary-color-text); */
   box-shadow: 0 0 5px var(--secondary-color-2);
-  border-radius: 5px;
+  border-radius: 16px;
+}
+
+.rating-stars {
+  grid-area: stars;
+  margin: 5px auto;
+}
+
+.rating-userImg-container {
+  grid-area: userPic;
+}
+
+.rating-user {
+  grid-area: userName;
+}
+
+.rating-text {
+  grid-area: ratingText;
 }
 
 footer {

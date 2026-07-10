@@ -1,4 +1,5 @@
 import Rating from "./Rating"
+import { Star } from "lucide-react";
 
 
 
@@ -9,7 +10,17 @@ export default function Ratings() {
       starRating: 5,
       user : {name: "Dan", profilePic: ""},
       ratingText: "test ratingu",
-    }
+    },
+    { id: 2,
+      starRating: 3,
+      user : {name: "Dan", profilePic: ""},
+      ratingText: "test ratingu",
+    },
+    { id: 3,
+      starRating: 1,
+      user : {name: "Dan", profilePic: ""},
+      ratingText: "test ratingu",
+    },
   ];
 
   return (
