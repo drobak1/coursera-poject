@@ -74,6 +74,9 @@ body{
 .content-wrapper {
   padding-top: 100px;
 }
+.content-wrapper-booking {
+  padding-top: 120px;
+}
 
 .nav-links {
   display: flex;
@@ -339,6 +342,21 @@ footer .nav-items a:hover {
 header .active-nav {
   color: var(--secondary-color-text);
   text-shadow: 0 0 3px var(--primary-color-ye);
+}
+
+.booking-form-container {
+  height: 80%;
+  margin-top: a;
+  display: grid; 
+  justify-content: center;
+  max-width: 100%; 
+}
+
+.booking-form {
+  display: grid; 
+  justify-content: center;
+  max-width: 800px; 
+  gap: 20px
 }
 
 @media (max-width: 810px) {
